@@ -1,5 +1,5 @@
-package com.example.fast_food_app
+package com.rado.fast_food_app
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity()
+class MainActivity : FlutterActivity()
