@@ -1,3 +1,5 @@
+export 'dart:convert';
+
 export 'package:fast_food_app/constants/app_bindings.dart';
 export 'package:fast_food_app/constants/app_colors.dart';
 export 'package:fast_food_app/constants/app_defaults.dart';
