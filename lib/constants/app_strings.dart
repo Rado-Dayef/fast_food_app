@@ -5,6 +5,7 @@ class AppStrings {
   static const String homeSubTitle = "Delivers on Time";
 
   /// App Routes.
+  static const String cartRoute = "/cart";
   static const String homeRoute = "/home";
   static const String detailsRoute = "/details";
 
@@ -38,12 +39,13 @@ class AppStrings {
   static const String thisFeatureIsNotAvailableToast = "This feature is not available yet.";
 
   /// App Texts.
+  static const String cartText = "Cart";
   static const String pizzaText = "Pizza";
   static const String pastaText = "Pasta";
   static const String burgerText = "Burger";
   static const String cheeseText = "Cheese";
-  static const String totalPriceText = "Total Price";
   static const String buyNowText = "Buy Now";
   static const String hotBurgerText = "Hot Burger";
+  static const String totalPriceText = "Total Price";
   static const String burgerDetailsText = "We bring you the burger with cheese served with onion, cold drink and fries. We bring you the burger with cheese served with onion, cold drink and fries.";
 }

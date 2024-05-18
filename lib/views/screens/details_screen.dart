@@ -34,7 +34,7 @@ class DetailsScreen extends GetWidget<DetailsController> {
                       ),
                     ),
                     InkWell(
-                      onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
+                      onTap: controller.onAddToCartOrBuyNowClick,
                       child: Icon(
                         Icons.shopping_cart_rounded,
                         color: AppColors.whiteColor,
@@ -170,7 +170,7 @@ class DetailsScreen extends GetWidget<DetailsController> {
                 ],
               ),
               InkWell(
-                onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
+                onTap: controller.onAddToCartOrBuyNowClick,
                 child: Container(
                   height: 50.sp,
                   width: 125.sp,

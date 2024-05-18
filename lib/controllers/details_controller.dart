@@ -16,4 +16,9 @@ class DetailsController extends GetxController {
     count.value == 1 ? AppDefaults.defaultToast(AppStrings.countCanNotBeLessThenOneToast) : count.value--;
     totalPrice.value = count.value * 55.0;
   }
+
+  /// To navigate from the details screen to the cart screen.
+  void onAddToCartOrBuyNowClick() {
+    Get.toNamed(AppStrings.cartRoute, arguments: [burgerFromArguments, count, totalPrice]);
+  }
 }

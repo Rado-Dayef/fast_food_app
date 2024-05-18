@@ -109,16 +109,21 @@ class HomeScreen extends GetWidget<HomeController> {
             ),
           ),
         ),
-        body: Obx(
-          () {
-            return controller.index.value == 0
-                ? BurgerScreen(controller)
-                : controller.index.value == 1
-                    ? const PizzaScreen()
-                    : controller.index.value == 2
-                        ? const CheeseScreen()
-                        : const PastaScreen();
-          },
+        body: Padding(
+          padding: EdgeInsets.only(
+            bottom: 50.h,
+          ),
+          child: Obx(
+            () {
+              return controller.index.value == 0
+                  ? BurgerScreen(controller)
+                  : controller.index.value == 1
+                      ? const PizzaScreen()
+                      : controller.index.value == 2
+                          ? const CheeseScreen()
+                          : const PastaScreen();
+            },
+          ),
         ),
         bottomSheet: Container(
           height: 50.h,
