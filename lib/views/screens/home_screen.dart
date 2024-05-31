@@ -81,21 +81,21 @@ class HomeScreen extends GetWidget<HomeController> {
                           ),
                         ),
                         InkWell(
-                          onTap: () => controller.index.value = 1,
+                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
                           child: TabBarWidget(
                             AppStrings.pizzaText,
                             isIndexTrue: controller.index.value == 1,
                           ),
                         ),
                         InkWell(
-                          onTap: () => controller.index.value = 2,
+                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
                           child: TabBarWidget(
                             AppStrings.cheeseText,
                             isIndexTrue: controller.index.value == 2,
                           ),
                         ),
                         InkWell(
-                          onTap: () => controller.index.value = 3,
+                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
                           child: TabBarWidget(
                             AppStrings.pastaText,
                             isIndexTrue: controller.index.value == 3,
@@ -113,17 +113,7 @@ class HomeScreen extends GetWidget<HomeController> {
           padding: EdgeInsets.only(
             bottom: 50.h,
           ),
-          child: Obx(
-            () {
-              return controller.index.value == 0
-                  ? BurgerScreen(controller)
-                  : controller.index.value == 1
-                      ? const PizzaScreen()
-                      : controller.index.value == 2
-                          ? const CheeseScreen()
-                          : const PastaScreen();
-            },
-          ),
+          child: BurgerScreen(controller),
         ),
         bottomSheet: Container(
           height: 50.h,

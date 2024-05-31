@@ -17,13 +17,12 @@ class AppStrings {
   static const String dollarSign = "\$";
 
   /// App JSON Texts.
+  static const String dataJSONText = "data";
   static const String imageJSONText = "image";
   static const String titleJSONText = "title";
   static const String priceJSONText = "price";
   static const String subTitleJSONText = "subTitle";
-
-  /// App JSONs.
-  static const String burgerJSON = "assets/jsons/burgerJSON.json";
+  static const String descriptionJSONText = "description";
 
   /// App Images.
   static const String bigBeefyImage = "assets/images/bigBeefyImage.png";
@@ -45,7 +44,11 @@ class AppStrings {
   static const String burgerText = "Burger";
   static const String cheeseText = "Cheese";
   static const String buyNowText = "Buy Now";
+  static const String bigBeefyText = "Big Beefy";
   static const String hotBurgerText = "Hot Burger";
   static const String totalPriceText = "Total Price";
-  static const String burgerDetailsText = "We bring you the burger with cheese served with onion, cold drink and fries. We bring you the burger with cheese served with onion, cold drink and fries.";
+  static const String veggiePattyText = "Veggie Patty";
+  static const String doubleStackText = "Double Stack";
+  static const String spicyChickenText = "Spicy Chicken";
+  static const String burgerDescriptionText = "A cheeseburger is a classic sandwich made with a ground beef patty grilled to juicy perfection. The patty is nestled between a soft bun and topped with melty cheese, usually cheddar or American.  For a delicious twist, additional toppings like lettuce, tomato, onion, pickles, ketchup, mustard, and mayo can be added.";
 }

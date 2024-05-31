@@ -126,7 +126,7 @@ class DetailsScreen extends GetWidget<DetailsController> {
               ),
               const GapWidget(20),
               Text(
-                AppStrings.burgerDetailsText,
+                controller.burgerFromArguments.description,
                 style: AppFonts.font20White.copyWith(
                   color: AppColors.transparentWhiteColor,
                   fontSize: 18.sp,

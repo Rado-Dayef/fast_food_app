@@ -32,5 +32,4 @@ flutter:
 
   assets:
     - assets/
-    - assets/jsons/
     - assets/images/
