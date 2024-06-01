@@ -20,4 +20,3 @@ export 'package:flutter/services.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:fluttertoast/fluttertoast.dart';
 export 'package:get/get.dart';
-export 'package:shimmer/shimmer.dart';
