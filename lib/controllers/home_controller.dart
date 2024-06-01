@@ -1,7 +1,6 @@
 import 'package:fast_food_app/constants/app_imports.dart';
 
 class HomeController extends GetxController {
-  RxInt index = RxInt(0);
   Map<String, List<BurgerModel>> burgerList = {
     AppStrings.dataJSONText: [
       BurgerModel(

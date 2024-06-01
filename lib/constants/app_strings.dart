@@ -12,26 +12,17 @@ class AppStrings {
   /// App Signs.
   static const String plusSign = "+";
   static const String spaceSign = " ";
-  static const String colonSign = ":";
   static const String minusSign = "-";
   static const String dollarSign = "\$";
 
   /// App JSON Texts.
   static const String dataJSONText = "data";
-  static const String imageJSONText = "image";
-  static const String titleJSONText = "title";
-  static const String priceJSONText = "price";
-  static const String subTitleJSONText = "subTitle";
-  static const String descriptionJSONText = "description";
 
   /// App Images.
   static const String bigBeefyImage = "assets/images/bigBeefyImage.png";
   static const String doubleStackImage = "assets/images/doubleStackImage.png";
   static const String veggiePattyImage = "assets/images/veggiePattyImage.png";
   static const String spicyChickenImage = "assets/images/spicyChickenImage.png";
-
-  /// App Fonts.
-  static const String timesFont = "Times";
 
   /// App Toasts.
   static const String countCanNotBeLessThenOneToast = "Count can't be less then one.";

@@ -68,42 +68,24 @@ class HomeScreen extends GetWidget<HomeController> {
                   ),
                 ),
                 const GapWidget(30),
-                Obx(
-                  () {
-                    return Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        InkWell(
-                          onTap: () => controller.index.value = 0,
-                          child: TabBarWidget(
-                            AppStrings.burgerText,
-                            isIndexTrue: controller.index.value == 0,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
-                          child: TabBarWidget(
-                            AppStrings.pizzaText,
-                            isIndexTrue: controller.index.value == 1,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
-                          child: TabBarWidget(
-                            AppStrings.cheeseText,
-                            isIndexTrue: controller.index.value == 2,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () => AppDefaults.defaultToast(AppStrings.thisFeatureIsNotAvailableToast),
-                          child: TabBarWidget(
-                            AppStrings.pastaText,
-                            isIndexTrue: controller.index.value == 3,
-                          ),
-                        ),
-                      ],
-                    );
-                  },
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TabBarWidget(
+                      onClick: () {},
+                      AppStrings.burgerText,
+                      isIndexTrue: true,
+                    ),
+                    const TabBarWidget(
+                      AppStrings.pizzaText,
+                    ),
+                    const TabBarWidget(
+                      AppStrings.cheeseText,
+                    ),
+                    const TabBarWidget(
+                      AppStrings.pastaText,
+                    ),
+                  ],
                 ),
               ],
             ),
